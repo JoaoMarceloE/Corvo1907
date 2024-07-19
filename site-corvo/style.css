@@ -7,6 +7,9 @@
     --branco:#ffffff;
     --cinza:#ded7d0;
 }
+html{
+    overflow-x: hidden;
+}
 
 
 body {
@@ -115,24 +118,36 @@ body {
 }
 /* sessão about us */
 /* A sessão maior precisa ter width: 100%, entretanto, as sessões filhas: "us__right recisam ter width:50%, para uso de margens e tamanhos de imagens vamos usar a regra de 8 */
+#title-about{
+    text-align: center;
+    font-size: 32px;
 
+}
 .about-us{
     width: 100%;
-    background-color: #13BDE5;
     /* fazendo o uso do flexbox (linha) */
     display: flex;
+    justify-content: center;
+    padding: 32px;
+    gap: 32px;
 
 }
 .us__left{
-    width: 50%;
-    background-color: #e37210;
+    width: 40%;
+}
+.us__left li{
+    font-size: ;
 }
 .us__right{
-    width: 50%;
-    background-color: blue;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 .us__right img{
-    width: 70%;
+    width: 80%;
+    height: 90%;
 
 
 }
