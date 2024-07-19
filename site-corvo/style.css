@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --laranjaPrimario:#e37210;/* 60% */
+    --azulSegundario:#13BDE5;/* 30% */
+    --laranjaTerceario:#FFF8F2;/* 10% */
+    --branco:#ffffff;
+    --cinza:#ded7d0;
+}
+
+
+body {
+    background-color:  var(--branco);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: var(--laranjaPrimario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding:24px;
+ 
+
+}
+
+#logo-principal {
+    width: 350px;
+
+}
+
+.container-menu {
+    width: 60%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: 24px;
+    
+
+}
+
+.container-menu li {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.5s ease-out;
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 600;
+}
+
+.container-menu li:hover {
+    transform: scale(1.1);
+    background-color: var(--azulSegundario);
+    
+
+}
+
+.container button {
+    padding: 10px;
+    background-color: var(--azulSegundario);
+    color: white;   
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 16pt;
+    border-radius: 8px;
+}
+
+.container button:hover {
+    opacity: 0.5;
+    /* transform: scale(1.1); */
+    /* background-color: transparent; */   
+}
+
+ /* Sessão main */
+.container-main{
+    position: relative;
+
+}
+
+.container-main img{
+    width: 100%;
+    z-index: 0;
+}
+.container-main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;      
+    background-color:rgb(0, 0,0, 0.5);
+    z-index: 1;
+
+}
+.container-main h1{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+/* sessão about us */
+/* A sessão maior precisa ter width: 100%, entretanto, as sessões filhas: "us__right recisam ter width:50%, para uso de margens e tamanhos de imagens vamos usar a regra de 8 */
+
+.about-us{
+    width: 100%;
+    background-color: #13BDE5;
+    /* fazendo o uso do flexbox (linha) */
+    display: flex;
+
+}
+.us__left{
+    width: 50%;
+    background-color: #e37210;
+}
+.us__right{
+    width: 50%;
+    background-color: blue;
+}
+.us__right img{
+    width: 70%;
+
+
+}
+
+
+
+
+
